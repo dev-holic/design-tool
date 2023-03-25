@@ -1,5 +1,5 @@
 {
-  "name": "template-react",
+  "name": "design-tool",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yong1000abc/template-react.git"
+    "url": "git+https://github.com/yong1000abc/design-tool.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yong1000abc/template-react/issues"
+    "url": "https://github.com/yong1000abc/design-tool/issues"
   },
-  "homepage": "https://github.com/yong1000abc/template-react#readme",
+  "homepage": "https://yong1000abc.github.io/design-tool",
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
