@@ -1,12 +1,18 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { App } from './App';
+import { GlobalStyle } from './GlobalStyle';
+import { RootView } from './ui/views/RootView';
 
-const container = document.getElementById('root')!;
+const container = document.getElementById('root');
+if (!container) {
+  throw new Error('container not found.');
+}
+
 const root = createRoot(container);
 
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <StrictMode>
+    <GlobalStyle />
+    <RootView />
+  </StrictMode>
 );
