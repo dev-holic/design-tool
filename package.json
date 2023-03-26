@@ -7,7 +7,9 @@
     "dev": "export NODE_ENV=development && webpack server --open --hot",
     "build": "export NODE_ENV=production && webpack",
     "predeploy": "rm -rf dist && npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "link:canvas": "npm link @yong1000abc/design-tool-canvas",
+    "unlink:canvas": "npm unlink --no-save @yong1000abc/design-tool-canvas && npm i -E @yong1000abc/design-tool-canvas"
   },
   "repository": {
     "type": "git",
@@ -45,7 +47,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@yong1000abc/design-tool-canvas": "^1.0.11",
+    "@yong1000abc/design-tool-canvas": "1.0.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.9",
