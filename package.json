@@ -4,12 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack server --mode development --open --hot",
-    "build": "npm run build:canvas && webpack --mode production",
-    "dev:canvas": "npm run dev -w @design-tool/canvas",
-    "watch:canvas": "npm run watch -w @design-tool/canvas",
-    "build:canvas": "npm run build -w @design-tool/canvas",
-    "predeploy": "npm run build",
+    "dev": "export NODE_ENV=development && webpack server --open --hot",
+    "build": "export NODE_ENV=production && webpack",
+    "predeploy": "rm -rf dist && npm run build",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -46,11 +43,9 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@yong1000abc/design-tool-canvas": "^1.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.9"
-  },
-  "workspaces": [
-    "packages/canvas"
-  ]
+  }
 }

@@ -1,8 +1,0 @@
-{
-  "extends": "../../tsconfig.common.json",
-  "compilerOptions": {
-    "declaration": true,
-    "outDir": "dist"
-  },
-  "include": ["src", "src/business/design-document"]
-}
