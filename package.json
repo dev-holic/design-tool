@@ -8,7 +8,9 @@
     "build": "npm run build:canvas && webpack --mode production",
     "dev:canvas": "npm run dev -w @design-tool/canvas",
     "watch:canvas": "npm run watch -w @design-tool/canvas",
-    "build:canvas": "npm run build -w @design-tool/canvas"
+    "build:canvas": "npm run build -w @design-tool/canvas",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,7 @@
     "babel-loader": "^9.1.2",
     "eslint": "^8.36.0",
     "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "prettier": "2.8.4",
     "typescript": "^4.9.5",
