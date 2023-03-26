@@ -1,7 +1,7 @@
 import 'reflect-metadata'; // tsyringe
 import { container } from 'tsyringe';
-import { DependencyMap } from './DependencyMap';
+import { DIMap } from './DIMap';
 
-Object.entries(DependencyMap).forEach(([token, provider]) => {
+Object.entries(DIMap).forEach(([token, provider]) => {
   container.register(token, provider as any);
 });

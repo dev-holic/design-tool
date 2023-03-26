@@ -1,4 +1,4 @@
-import './di/DependencyConfig';
+import '@di/di-config';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { GlobalStyle } from './GlobalStyle';
