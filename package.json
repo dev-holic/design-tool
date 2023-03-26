@@ -31,11 +31,13 @@
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
     "babel-loader": "^9.1.2",
+    "babel-plugin-transform-typescript-metadata": "^0.3.2",
     "eslint": "^8.36.0",
     "eslint-plugin-react": "^7.32.2",
     "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "prettier": "2.8.4",
+    "reflect-metadata": "^0.1.13",
     "typescript": "^4.9.5",
     "webpack": "^5.76.2",
     "webpack-cli": "^5.0.1",
@@ -46,6 +48,7 @@
     "@yong1000abc/design-tool-canvas": "^1.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^5.3.9"
+    "styled-components": "^5.3.9",
+    "tsyringe": "^4.7.0"
   }
 }

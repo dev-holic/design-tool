@@ -1,13 +1,7 @@
-import { useEffect, useRef } from 'react';
-import { createCanvas } from '@yong1000abc/design-tool-canvas';
+import { useCanvasContainerView } from '@ui/main/canvas/hooks/useCanvasContainerView.hook';
 
-export function CanvasContainerView({ className }: { className?: string }) {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (containerRef.current) {
-      createCanvas({ name: '' }).render(containerRef.current);
-    }
-  }, []);
-  return <div ref={containerRef} className={className}></div>;
-}
+export const CanvasContainerView = (props: { className?: string }) => {
+  return ((hookReturns) => (
+    <div ref={hookReturns.containerRef} className={props.className}></div>
+  ))(useCanvasContainerView());
+};

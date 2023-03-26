@@ -17,6 +17,11 @@ module.exports = {
 
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    alias: {
+      '@business': path.resolve(__dirname, 'src', 'business'),
+      '@ui': path.resolve(__dirname, 'src', 'ui'),
+      '@di': path.resolve(__dirname, 'src', 'di'),
+    },
   },
 
   module: {
